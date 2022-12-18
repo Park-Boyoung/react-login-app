@@ -52,7 +52,7 @@ export default function KakaoRedirectHandler() {
             headers: {
               "Content-Type": "application/json",
             },
-            body: loginInfo,
+            body: JSON.stringify(loginInfo),
           });
 
           if (registerResponse.status === 200) {
